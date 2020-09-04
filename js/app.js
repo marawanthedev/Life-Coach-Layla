@@ -11,22 +11,22 @@ Vue.component("my-nav", {
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#about" class="navigation__link">
+            <a href="#about" aria-label="About" class="navigation__link">
               <span>01</span>About </a
             >
           </li>
           <li class="navigation__item">
-            <a href="#services" class="navigation__link"
+            <a href="#services" aria-label="Services" class="navigation__link"
               ><span>02</span> Services</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#reviews" class="navigation__link">
+            <a href="#reviews" aria-label="Reviews" class="navigation__link">
               <span>03</span> Reviews</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#contact" class="navigation__link"><span>04</span> Contact</a>
+            <a href="#contact" aria-label="Contact" class="navigation__link"><span>04</span> Contact</a>
           </li>
          
         </ul>
@@ -52,7 +52,7 @@ Vue.component("top-section", {
   <div class="top-section" id="home">
   <div class="top-section__text">
   <h1 class="top-section__header ">Layla Shabayek</h1>   
-  <img class="top-section__logo" src="../img/logo.jpeg">
+  <img class="top-section__logo" alt="Main logo" src="../img/logo.jpeg">
   <div class="top-section__sub-header">Life & Marriage Coach</div>
   <div class="top-section__message">
   <div class="top-section__message__text">
@@ -104,7 +104,7 @@ Vue.component("middle-section", {
             وتتخطى مشكلات فى علاقاتك بالاطراف المحيطة بك سواء فى حياتك الاجتماعية او العملية وتحسن جودة هذه العلاقات
             وتفهم الاسباب التى تدعم نمو والتطور الايجابى للعلاقات</p>
         </div>
-        <a href="#contact"class="middle-section__item__btn"> اناجاهز للتغيير </a>
+        <a href="#contact" aria-label="Contact" class="middle-section__item__btn"> اناجاهز للتغيير </a>
     </div>
 
     <div class="middle-section__item" v-show="showTopTwo">
@@ -113,7 +113,7 @@ Vue.component("middle-section", {
         <div class="middle-section__item__header" >Life Coaching</div>
         <p class="middle-section__item__paragraph">بساعدك تتواصل وتفهم وتتخطى مشكلات فى علاقاتك بالاطراف اللى حوالك سواء فى حياتك الاجتماعيه او العمليه وتحسن جوده العلاق</p>
     </div>
-    <a  href="#contact" class="middle-section__item__btn"> اناجاهز للتغيير </a>
+    <a  href="#contact" aria-label="Contact" class="middle-section__item__btn"> اناجاهز للتغيير </a>
 </div>
 
 <div class="middle-section__item" v-show="showBottomTwo">
@@ -122,7 +122,7 @@ Vue.component("middle-section", {
     <div class="middle-section__item__header">self confidence counselling</div>
     <p class="middle-section__item__paragraph">بساعدك تعرف نفسك من خلال مقياس متعدده ومختلفه لمعرفه نقاط القوه ونقاط التطوير واكتساب مهارات تدعمك فى رحله حياة متوزانه</p>
 </div>
-<a  href="#contact" class="middle-section__item__btn"> اناجاهز للتغيير </a>
+<a  href="#contact" aria-label="Contact" class="middle-section__item__btn"> اناجاهز للتغيير </a>
 </div>
 <div class="middle-section__item" v-show="showBottomTwo">
 <div class="middle-section__item__img middle-section__item__img__4"></div>
@@ -131,7 +131,7 @@ Vue.component("middle-section", {
     <p class="middle-section__item__paragraph">
     كوتش التوافق الزواجى بساعدك اطراف العلاقة الزوج والزوجه على الفهم والتفهم لاسباب المشكلات وفهم شخصيتهم المختلفه ودعم حياة شعارها المودة والرحمه    </p>
 </div>
-<a  href="#contact" class="middle-section__item__btn"> انا <span class="middle-section__item__space"> جاهز</span> للتغيير </a>
+<a  href="#contact" aria-label="Contact" class="middle-section__item__btn"> انا <span class="middle-section__item__space"> جاهز</span> للتغيير </a>
 </div>
     </section>
     </div>
@@ -179,7 +179,7 @@ Vue.component("about", {
 <div class="about-container" id="about">
 <section class="about">
 <div class="about__img">
-<img class="about__img__inner"src="../img/about-img.png">
+<img class="about__img__inner" alt="about-img" src="../img/about-img.png">
 </div>
 <div class="about__text">
   <div class="about__text__head">
@@ -226,7 +226,7 @@ Vue.component("background-section", {
     
       <h1 class="background-section__card__header" v-show="showHeader">ابدأ رحلة التغيير</h1>
       <p class="background-section__card__paragraph">خوض التحدي و ابدأ رحلتك الي الافضل مع كوتش ليلي شبايك</p>
-      <a href="#services" class="background-section__card__btn">See service options</a>
+      <a href="#services" aria-label="Services" class="background-section__card__btn">See service options</a>
     </div>
 
     </div>
@@ -258,13 +258,13 @@ Vue.component("my-footer", {
  <h3>Layla<span>Shabayek</span></h3>
 
  <p class="footer-links">
- <a href="#home">Home</a>
+ <a href="#home" aria-label="Home Section">Home</a>
  <span>·</span>
-<a href="#services">Services</a>
+<a href="#services" aria-label="Services">Services</a>
 <span>·</span>
-<a href="#reviews">Reviews</a>
+<a href="#reviews" aria-label="Reviews">Reviews</a>
 <span>·</span>
- <a href="#about">About</a>
+ <a href="#about" aria-label="about">About</a>
  <span>·</span>
 
 
@@ -289,10 +289,7 @@ Vue.component("my-footer", {
  <p>+90 553 079 16 27</p>
  </div>
 
- <div class="footer-items">
- <i class="fa fa-envelope"></i>
- <p><a href="mailto:tmarawan11@gmail.com">contact@tmarawan11@gmail.com</a></p>
- </div>
+ 
 
  </div>
 
@@ -301,10 +298,10 @@ Vue.component("my-footer", {
 
  <div class="footer-icons">
 
- <a href="https://www.instagram.com/layla.mohamed8394/"><i class="fab fa-facebook"></i></a>
- <a href="https://www.instagram.com/layla.mohamed8394/"><i class="fab fa-instagram"></i></a>
- <a href="https://wa.link/rzg2vh"><i class="fab fa-whatsapp"></i></a>
- <a href="https://mail.google.com/"><i class="far fa-envelope"></i></a>
+ <a href="https://www.instagram.com/layla.mohamed8394/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+ <a href="https://www.instagram.com/layla.mohamed8394/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+ <a href="https://wa.link/rzg2vh" aria-label="Whatsapp"> <i class="fab fa-whatsapp"></i></a>
+ <a href="https://mail.google.com/" aria-label="Mail"><i class="far fa-envelope"></i></a>
 
  </div>
 
@@ -332,21 +329,21 @@ Vue.component("contact-us", {
   <p class="contact-us__social-media__p2"> Give us a smile. <span class="contact-us__social-media__p2__icon"><i class="fas fa-smile-beam"></i></span></p>
     </div>
 <div class="contact-us__social-media__items">
-<a href="https://wa.link/rzg2vh" class="contact-us__social-media__item"><span class="special-text">WhatsAppp</span>
+<a href="https://wa.link/rzg2vh" class="contact-us__social-media__item" aria-label="Whatsapp"><span class="special-text">WhatsAppp</span>
 <span class="contact-us__social-media__icon"><i class="fab fa-whatsapp"></i></span>
 
 </a>
-<a href="https://www.instagram.com/layla.mohamed8394/" class="contact-us__social-media__item"><span class="special-text">Instagram</span>
+<a href="https://www.instagram.com/layla.mohamed8394/" aria-label="Instagram" class="contact-us__social-media__item"><span class="special-text">Instagram</span>
 <span class="contact-us__social-media__icon"><i class="fab fa-instagram"></i></span>
 
 
 </a>
-<a href="https://www.facebook.com/search/top?q=layla%20shabayak-life%20coach" class="contact-us__social-media__item"><span class="special-text">Facebook</span>
+<a href="https://www.facebook.com/search/top?q=layla%20shabayak-life%20coach" aria-label="Facebook" class="contact-us__social-media__item"><span class="special-text">Facebook</span>
 <span class="contact-us__social-media__icon"><i class="fab fa-facebook"></i></span>
 
 
 </a>
-<a href="https://mail.google.com/" class="contact-us__social-media__item"><span class="special-text">Email</span>
+<a href="https://mail.google.com/" aria-label="Email" class="contact-us__social-media__item"><span class="special-text">Email</span>
 <span class="contact-us__social-media__icon"><i class="far fa-envelope"></i></span>
 
 </a>
@@ -507,7 +504,6 @@ Vue.component("reviews", {
   },
   methods: {
     prevSlide() {
-
       if (this.slideCounter > 0) {
         if (this.slideCounter > 1) {
           document.querySelector(".the-reviews").style.transform =

@@ -32,11 +32,40 @@
       position: absolute;
       top: 0;
       left: 0;
-      background: url("../../img/contact.jpg");
+      background: url("../../img/contact-lg.jpg");
       background-attachment: fixed;
       @include centerBackgroundImg;
+
       z-index: -1;
       filter: blur(2px);
+      @media only screen and(max-width:1024px) {
+        background: url("/img/contact-md.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      @media only screen and(max-width:768px) {
+        background: url("/img/contact-md-2.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      @media only screen and(max-width:650px) {
+        background: url("/img/contact-md-3.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      @media only screen and(max-width:425px) {
+        background: url("/img/contact-xsm.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
   }
 
@@ -135,7 +164,7 @@
       &::after {
         content: "";
         position: absolute;
-        bottom: .5rem;
+        bottom: 0.5rem;
         left: -0.75rem;
         width: 4rem;
         height: 4rem;

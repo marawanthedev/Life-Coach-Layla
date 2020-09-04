@@ -1,7 +1,7 @@
 .background-section {
   width: 100%;
   height: 45rem;
-  background: url("/img/footer-middle-img.jpg");
+  background: url("/img/footer-middle-img-lg-min.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -12,6 +12,18 @@
   font-family: "Amiri", serif;
   background-repeat: no-repeat;
   margin-top: 2rem;
+  @media only screen and(max-width:1110px) {
+    background: url("/img/footer-middle-img-md.jpg");
+  }
+  @media only screen and(max-width:768px) {
+    background: url("/img/footer-middle-img-md-2-min.jpg");
+  }
+  @media only screen and(max-width:634px) {
+    background: url("/img/footer-middle-img-sm-min.jpg");
+  }
+  @media only screen and(max-width:415px) {
+    background: url("/img/footer-middle-img-xsm-min.jpg");
+  }
   &__card {
     @media only screen and(max-width:1110px) {
       width: 50%;

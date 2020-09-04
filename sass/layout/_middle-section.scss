@@ -99,21 +99,21 @@
 
       &__1 {
         height: 30rem;
-        background: url("/img/op.jpeg");
+        background: url("/img/op-min-1.jpg");
         @include centerBackgroundImg;
       }
       &__2 {
         height: 30rem;
 
-        background: url("/img/mp.png");
+        background: url("/img/mp-min-1.png");
         @include centerBackgroundImg;
       }
       &__3 {
-        background: url("/img/main-img.jpeg");
+        background: url("/img/main-img-min-1.jpg");
         @include centerBackgroundImg;
       }
       &__4 {
-        background: url("/img/img-4.png");
+        background: url("/img/img-4-min-1.png");
         @include centerBackgroundImg;
       }
     }

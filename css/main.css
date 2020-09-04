@@ -16,12 +16,24 @@
   padding: 6rem 0; }
   .about__img {
     background: url("../../img/about-img.png");
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 40%;
     box-sizing: border-box;
     border: 2rem solid #fbf2ec; }
+    @media only screen and (max-width: 1100px) {
+      .about__img {
+        background: url("../../img/about-img-min.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; } }
+    @media only screen and (max-width: 450px) {
+      .about__img {
+        background: url("../../img/about-img - 2.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; } }
     @media only screen and (max-width: 675px) {
       .about__img {
         width: 100%;
@@ -48,15 +60,18 @@
         padding: 2rem 0; } }
     .about__text__head {
       margin-bottom: 2rem;
-      margin-top: -2rem; }
+      margin-top: -2rem;
+      font-family: "Quicksand", sans-serif; }
       .about__text__head__main {
         font-size: 4rem;
-        margin-bottom: 1rem; }
+        margin-bottom: 1rem;
+        font-size: 3.5rem; }
         @media only screen and (max-width: 675px) {
           .about__text__head__main {
             margin: 1rem 0; } }
       .about__text__head__secondary {
-        font-size: 2.5rem; }
+        font-size: 2.25rem;
+        font-weight: 500; }
         @media only screen and (max-width: 675px) {
           .about__text__head__secondary {
             margin: 1rem 0; } }
@@ -117,13 +132,41 @@
       position: absolute;
       top: 0;
       left: 0;
-      background: url("../../img/contact.jpg");
+      background: url("../../img/contact-lg.jpg");
       background-attachment: fixed;
       background-size: cover;
       background-position: right;
       background-repeat: no-repeat;
       z-index: -1;
       filter: blur(2px); }
+      @media only screen and (max-width: 1024px) {
+        .contact-us__img::after {
+          background: url("/img/contact-md.jpg");
+          background-attachment: fixed;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat; } }
+      @media only screen and (max-width: 768px) {
+        .contact-us__img::after {
+          background: url("/img/contact-md-2.jpg");
+          background-attachment: fixed;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat; } }
+      @media only screen and (max-width: 650px) {
+        .contact-us__img::after {
+          background: url("/img/contact-md-3.jpg");
+          background-attachment: fixed;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat; } }
+      @media only screen and (max-width: 425px) {
+        .contact-us__img::after {
+          background: url("/img/contact-xsm.jpg");
+          background-attachment: fixed;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat; } }
   .contact-us__header {
     font-size: 6.5rem;
     margin-top: -3rem;
@@ -202,7 +245,7 @@
       .contact-us__social-media__header::after {
         content: "";
         position: absolute;
-        bottom: .5rem;
+        bottom: 0.5rem;
         left: -0.75rem;
         width: 4rem;
         height: 4rem;
@@ -413,6 +456,10 @@ footer {
   font-weight: bold;
   margin-bottom: 20px; }
 
+.footer-items a {
+  color: white;
+  text-decoration: none; }
+
 .footer-distributed .footer-icons {
   margin-top: 25px; }
 
@@ -470,8 +517,7 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
-  position: relative;
-  border: 1px solid black; }
+  position: relative; }
   @media only screen and (max-width: 500px) {
     body {
       padding: 0rem; } }
@@ -675,7 +721,7 @@ body {
     .top-section__message__img {
       width: 50%;
       height: 100%;
-      background: url("../../img/high-pic.png");
+      background: url("../../img/high-pic-min-1.png");
       background-size: cover;
       background-position: right;
       background-repeat: no-repeat;
@@ -873,7 +919,7 @@ body {
 .background-section {
   width: 100%;
   height: 45rem;
-  background: url("/img/footer-middle-img.jpg");
+  background: url("/img/footer-middle-img-lg-min.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -884,6 +930,18 @@ body {
   font-family: "Amiri", serif;
   background-repeat: no-repeat;
   margin-top: 2rem; }
+  @media only screen and (max-width: 1110px) {
+    .background-section {
+      background: url("/img/footer-middle-img-md.jpg"); } }
+  @media only screen and (max-width: 768px) {
+    .background-section {
+      background: url("/img/footer-middle-img-md-2-min.jpg"); } }
+  @media only screen and (max-width: 634px) {
+    .background-section {
+      background: url("/img/footer-middle-img-sm-min.jpg"); } }
+  @media only screen and (max-width: 415px) {
+    .background-section {
+      background: url("/img/footer-middle-img-xsm-min.jpg"); } }
   .background-section__card {
     overflow: hidden;
     width: 40%;
@@ -1058,23 +1116,23 @@ body {
       animation: scaleUp 1s ease; }
       .middle-section__item__img__1 {
         height: 30rem;
-        background: url("/img/op.jpeg");
+        background: url("/img/op-min-1.jpg");
         background-size: cover;
         background-position: right;
         background-repeat: no-repeat; }
       .middle-section__item__img__2 {
         height: 30rem;
-        background: url("/img/mp.png");
+        background: url("/img/mp-min-1.png");
         background-size: cover;
         background-position: right;
         background-repeat: no-repeat; }
       .middle-section__item__img__3 {
-        background: url("/img/main-img.jpeg");
+        background: url("/img/main-img-min-1.jpg");
         background-size: cover;
         background-position: right;
         background-repeat: no-repeat; }
       .middle-section__item__img__4 {
-        background: url("/img/img-4.png");
+        background: url("/img/img-4-min-1.png");
         background-size: cover;
         background-position: right;
         background-repeat: no-repeat; }
