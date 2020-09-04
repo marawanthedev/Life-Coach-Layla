@@ -52,7 +52,7 @@ Vue.component("top-section", {
   <div class="top-section" id="home">
   <div class="top-section__text">
   <h1 class="top-section__header ">Layla Shabayek</h1>   
-  <img class="top-section__logo" alt="Main logo" src="../img/logo.jpeg">
+  <img class="top-section__logo" alt="Main logo" src="../img/logo.jpg">
   <div class="top-section__sub-header">Life & Marriage Coach</div>
   <div class="top-section__message">
   <div class="top-section__message__text">
