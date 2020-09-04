@@ -1,47 +1,94 @@
-@keyframes moveInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-8rem);
-    }
-  
-    60% {
-      /* transform: rotate(5deg); */
-    }
-    80% {
-      transform: translateX(1rem);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+@keyframes slideLeft {
+  from {
+    transform: translateX(-270rem);
+    opacity: 0;
   }
-  @keyframes moveInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(8rem);
-    }
-    60% {
-      /* transform: rotate(10deg); */
-    }
-    80% {
-      transform: translateX(-1rem);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+  to {
+    transform: translateX(0rem);
+    opacity: 1;
   }
-  @keyframes moveInTop {
-    0% {
-      opacity: 0;
-      transform: translateY(25rem);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(20rem);
+    opacity: 0;
   }
-  
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@keyframes circle {
+  from {
+    transform: scale(0);
+    color: black;
+  }
+  to {
+    transform: scale(1);
+    color: pink;
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-200rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@keyframes slideLeft-2 {
+  from {
+    transform: translateX(100rem);
+    
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(270rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpDown {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes slideUpDown-2 {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(.5rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}

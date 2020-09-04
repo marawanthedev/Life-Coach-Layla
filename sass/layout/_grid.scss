@@ -22,25 +22,21 @@
     // gets these properties applied to it
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
-      
-     
+
       @include respond(tab-port) {
         margin-right: 0;
         margin-bottom: $gutter-vertical-small;
       }
-     
     }
     @include respond(tab-port) {
       width: 100% !important;
     }
-   
   }
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
   }
   .col-1-of-3 {
     width: calc((100% - (#{$gutter-horizontal}* 2)) / 3);
-  
   }
 
   .col-1-of-4 {
@@ -48,17 +44,22 @@
   }
 
   .col-2-of-3 {
-    width: calc(((100% - (#{$gutter-horizontal}* 2)) / 3)*2 + #{$gutter-horizontal});
+    width: calc(
+      ((100% - (#{$gutter-horizontal}* 2)) / 3) * 2 + #{$gutter-horizontal}
+    );
 
     // this is equal to 2 time the width of 1 of 3s + the width of te margin right between them
     margin-right: 0;
   }
   .col-3-of-4 {
-    width: calc(((100% - (#{$gutter-horizontal}* 3)) / 4)*3 + (#{$gutter-horizontal}*2));
+    width: calc(
+      ((100% - (#{$gutter-horizontal}* 3)) / 4) * 3 + (#{$gutter-horizontal}* 2)
+    );
     // so this equal to the widht of 3 1 of 4s + the two margin rights between them
   }
   .col-2-of-4 {
-    width: calc(((100% - (#{$gutter-horizontal}* 3)) / 4)*2 + #{$gutter-horizontal});
-
+    width: calc(
+      ((100% - (#{$gutter-horizontal}* 3)) / 4) * 2 + #{$gutter-horizontal}
+    );
   }
 }

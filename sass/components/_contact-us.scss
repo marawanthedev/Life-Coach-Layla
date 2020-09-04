@@ -1,0 +1,267 @@
+.contact-us-container {
+  width: 100%;
+  height: auto;
+  padding: 3rem 0%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__img {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url("../../img/contact.jpg");
+      background-attachment: fixed;
+      @include centerBackgroundImg;
+      z-index: -1;
+      filter: blur(2px);
+    }
+  }
+
+  &__header {
+    font-size: 6.5rem;
+    margin-top: -3rem;
+    letter-spacing: 0.25rem;
+  }
+
+  &__paragraph {
+    font-size: 2.5rem;
+    font-family: "Quicksand", sans-serif;
+  }
+  &__social-media {
+    width: 100%;
+    padding: 5rem 20%;
+    background-color: white;
+    background-color: pink;
+
+    @media only screen and(max-width:1000px) {
+      padding: 3rem 10%;
+    }
+    @media only screen and(max-width:720px) {
+      padding: 3rem 8%;
+    }
+    @media only screen and(max-width:550px) {
+      padding: 3rem 6%;
+    }
+    @media only screen and(max-width:450px) {
+      padding: 3rem 4%;
+    }
+    @media only screen and(max-width:340px) {
+      padding: 3rem 2%;
+    }
+    &__p1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-family: "Quicksand", sans-serif;
+      text-align: center;
+    }
+    &__p2 {
+      font-size: 2rem;
+      &__icon {
+        display: inline-block;
+        font-size: 3rem;
+        margin-left: 1rem;
+        font-family: "Quicksand", sans-serif;
+        color: black;
+        text-align: center;
+        // background-color: white;
+        // transition: all 0.3s ease;
+        color: pink;
+        animation: slideUpDown-2 1s ease infinite;
+      }
+    }
+
+    &__text-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      // border-bottom:1px solid  rgb(128, 133, 132);
+      &::after {
+        content: "";
+        width: 50%;
+        height: 2px;
+        // color: rgb(128, 133, 132);
+        background-color: rgb(128, 133, 132);
+        position: absolute;
+        left: 50%;
+        bottom: -2rem;
+        // transform: rotateX(190deg);
+        transform: translateX(-50%);
+      }
+    }
+    &__header {
+      font-size: 4rem;
+
+      margin-top: 0rem;
+      color: black;
+      font-family: "Bebas Neue", cursive;
+      font-family: "Quicksand", sans-serif;
+      letter-spacing: 0.25rem;
+      z-index: 5;
+      transition: all 0.3s;
+      @media only screen and(max-width:300px) {
+        font-size: 3.5rem;
+      }
+      &::first-letter {
+        margin-right: 0.5rem;
+        color: white;
+      }
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: .5rem;
+        left: -0.75rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background: pink;
+        transform: scale(1);
+        transition: all 0.3s ease;
+        z-index: -1;
+        transition: all 0.3s;
+      }
+      &:hover {
+      }
+    }
+
+    &__text-info {
+      height: 100%;
+    }
+    &__item:link,
+    &__item:visited {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: black;
+      font-size: 2.5rem;
+      width: 45%;
+      margin: 1rem 2%;
+      font-family: "Quicksand", sans-serif;
+      text-decoration: none;
+      //   border: 1px solid black;
+      &__text {
+        background-color: pink;
+      }
+      @media only screen and(max-width:375px) {
+        font-size: 2rem;
+      }
+    }
+    &__icon {
+      margin-top: 0.5rem;
+      position: relative;
+      // margin-left: 4rem;
+      &::after {
+        // content: "";
+        // width: 3rem;
+        // height: 3.5rem;
+        // border-radius: 50%;
+        // background-color: black;
+        // position: absolute;
+        // top: 0.35rem;
+        // left: 8.75rem;
+        // z-index: -1;
+      }
+      color: black;
+      z-index: 5;
+      font-size: 3rem;
+    }
+    &__items {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      // width: 50%;
+      width: 100%;
+      height: 100%;
+      padding: 5% 10%;
+      // margin-left: 12rem;
+      margin-top: 2.5rem;
+      // box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.2);
+
+      @media only screen and(max-width:550px) {
+        padding: 3rem 6%;
+      }
+      @media only screen and(max-width:450px) {
+        padding: 3rem 4%;
+      }
+      @media only screen and(max-width:350px) {
+        padding: 3rem 0;
+      }
+    }
+    &__container:hover &__header {
+      &::first-letter {
+        color: white;
+      }
+      &::after {
+        background: black;
+      }
+    }
+    // &__container:hover &__p2 {
+    //   &__icon {
+    //     display: inline-block;
+    //     color: pink;
+    //     animation: slideUpDown-2 1s ease infinite;
+    //   }
+    // }
+    &__container {
+      display: flex;
+      position: relative;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      height: auto;
+      padding: 3rem 15%;
+
+      //   background-color: rgb(138, 72, 72);
+      background-color: white;
+      //   border: 1px solid rgb(128, 133, 132);
+      border-radius: 3px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.special-text {
+  position: relative;
+  z-index: 1;
+  &::after {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 20%;
+    background-color: pink;
+    content: "";
+    z-index: -1;
+  }
+}

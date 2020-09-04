@@ -1,26 +1,16 @@
-@import "abstract/functions";
 @import "abstract/mixins";
 @import "abstract/variables";
-
+@import "./components/about.scss";
+@import "./components/contact-us";
+@import "./components/footer";
 @import "base/base";
 @import "base/animations";
-@import "base/typography";
 @import "base/utilities.scss";
-
-@import "pages/home";
-@import "components/button";
-
-@import "layout/header";
 @import "layout/grid";
+@import "layout/top-section";
 @import "layout/navigation";
-@import "layout/footer";
-
-
-@import "components/composition";
-@import "components/story";
-@import "components/feature-box";
-@import "components/card";
-@import "components/background-video.scss";
-@import "components/form";
-@import "components/_popup";
-
+@import "layout/middle-footer.scss";
+@import "layout/middle-section.scss";
+@import "./components/review-bar.scss";
+@import "./components/process-steps.scss";
+@import "layout/reviews";

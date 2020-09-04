@@ -1,7 +1,9 @@
 .navigation {
   &__checkbox {
     display: none;
+    // z-index: 2000;
   }
+  z-index: 100000;
   &__button {
     background-color: $color-white;
     height: 7rem;
@@ -15,11 +17,11 @@
     text-align: center;
     cursor: pointer;
     @include respond(tab-port) {
-      top:4rem;
+      top: 4rem;
       right: 4rem;
     }
     @include respond(phone) {
-      top:2.5rem;
+      top: 2.5rem;
       right: 2.5rem;
     }
   }
@@ -30,20 +32,19 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    background-image: radial-gradient(
-      $color-primary-light,
-      $color-primary-dark
-    );
+
+    background: pink;
+
     z-index: 10;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 
     @include respond(tab-port) {
-      top:4.5rem;
+      top: 4.5rem;
       right: 4.5rem;
       // thats the background of the nav behind the button
     }
     @include respond(phone) {
-      top:3rem;
+      top: 3rem;
       right: 3rem;
     }
 
@@ -52,7 +53,7 @@
 
   &__nav {
     height: 100vh;
-    width: 100%;
+    width: 120vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -82,7 +83,8 @@
       padding: 1rem 2rem;
       font-size: 4rem;
       color: white;
-      font-weight: 200;
+      color: black;
+      font-weight: 300;
       background-image: linear-gradient(
         120deg,
         transparent 0%,
@@ -99,7 +101,7 @@
     &:hover,
     &:active {
       background-position: 100%;
-      color: $color-primary;
+      color: #861657;
       transform: translateX(1rem);
 
       // translate doesnt work on inline
@@ -107,7 +109,7 @@
     }
   }
   &__checkbox:checked ~ &__background {
-    transform: scale(80);
+    transform: scale(90);
   }
   &__checkbox:checked ~ &__nav {
     width: 100%;
@@ -151,12 +153,11 @@
     background-color: transparent;
   }
   &__checkbox:checked + &__button &__icon::before {
-      top:0;
+    top: 0;
     transform: rotate(135deg);
   }
   &__checkbox:checked + &__button &__icon::after {
-    top:0;
+    top: 0;
     transform: rotate(-135deg);
-    
-    }
+  }
 }

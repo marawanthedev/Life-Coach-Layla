@@ -10,7 +10,7 @@ html {
   font-size: 62.5%;
   // 10px =1remlllllllllllllllllllll;//////////p/pp/p/
   /* it better to use a percentage so users can change font size manually */
-
+  scroll-behavior: smooth;
   // note
   // always put biggest quereies on top
   // size should go from top to down
@@ -42,10 +42,19 @@ html {
   //   // so 8/16 equals the size
   //   // 1rem =8px
   // }
+
+  @media only screen and(max-width: 576px) {
+    font-size: 7px;
+  }
 }
 body {
   box-sizing: border-box;
   padding: 3rem;
+  position: relative;
+  border: 1px solid black;
+  @media only screen and(max-width: 500px) {
+    padding: 0rem;
+  }
   @include respond(tab-port) {
     // width<900
     padding: 0;

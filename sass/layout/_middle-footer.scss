@@ -1,0 +1,104 @@
+.background-section {
+  width: 100%;
+  height: 45rem;
+  background: url("/img/footer-middle-img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "Amiri", serif;
+  background-repeat: no-repeat;
+  margin-top: 2rem;
+  &__card {
+    @media only screen and(max-width:1110px) {
+      width: 50%;
+    }
+    @media only screen and(max-width:700px) {
+      width: 55%;
+    }
+    @media only screen and(max-width:600px) {
+      width: 55%;
+    }
+    @media only screen and(max-width:500px) {
+      width: 60%;
+    }
+    @media only screen and(max-width:450px) {
+      width: 65%;
+    }
+    overflow: hidden;
+
+    width: 40%;
+    height: 30rem;
+    font-size: 2rem;
+    background-color: white;
+    align-self: center;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    position: relative;
+
+    &__header {
+      font-size: 4.5rem;
+      font-weight: bold;
+      animation: slideDown 1s ease;
+
+      @media only screen and(max-width:520px) {
+        font-size: 4rem;
+      }
+      @media only screen and(max-width:420px) {
+        font-size: 3.5rem;
+      }
+      @media only screen and(max-width:300px) {
+        font-size: 3rem;
+      }
+    }
+    &__paragraph {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-top: -1rem;
+      direction: rtl;
+      font-family: "Markazi Text", serif;
+
+      @media only screen and(max-width:520px) {
+        font-size: 2.25rem;
+      }
+      @media only screen and(max-width:420px) {
+        font-size: 2rem;
+      }
+      @media only screen and(max-width:300px) {
+        font-size: 1.75rem;
+      }
+    }
+    &__btn:link,
+    &__btn:visited {
+      font-weight: 400;
+      background-color: pink;
+      padding: 1rem 3rem;
+      width: auto;
+      text-decoration: none;
+      outline: none;
+      color: black;
+      font-size: 1.5rem;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      align-self: center;
+      text-transform: uppercase;
+      font-family: "Quicksand", sans-serif;
+      background: rgba(245, 140, 124, 1);
+      position: relative;
+      transition: all 0.3s;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

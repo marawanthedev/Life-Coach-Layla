@@ -1,0 +1,303 @@
+.reviews-container {
+  padding: 5rem 5%;
+  //   @media only screen and(max-width:$bp-large) {
+  //     padding: 0rem 5%;
+  //   }
+
+  @media only screen and(max-width:$bp-medium-1) {
+    padding: 0 0%;
+  }
+  @media only screen and(max-width:600px) {
+    padding: 4rem 0%;
+  }
+  // border-bottom: 1px solid rgba(59, 64, 63, 1);
+}
+
+.the-reviews {
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  //   overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s;
+  @media only screen and(max-width:1200px) {
+    overflow: scroll;
+    height: 95rem;
+  }
+}
+.reviews {
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  overflow: hidden;
+  text-align: center;
+  @media only screen and(max-width:520px) {
+    height: 45rem;
+    padding-top: 10rem;
+  }
+  position: relative;
+  &__card {
+    display: inline-block;
+    position: relative;
+    border: 1px solid rgba(59, 64, 63, 1);
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 60rem;
+    @media only screen and(max-width:1200px) {
+      height: 30rem;
+      margin-bottom: 2rem;
+    }
+    @media only screen and(max-width:700px) {
+      width: 55rem;
+      height: auto;
+      // min-height: 60rem;
+    }
+    @media only screen and(max-width:650px) {
+      width: 50rem;
+    }
+    @media only screen and(max-width:600px) {
+      width: 45rem;
+    }
+    @media only screen and(max-width:520px) {
+      width: 45rem;
+      margin-left: 15rem;
+    }
+    @media only screen and(max-width:480px) {
+      margin-left: 11rem;
+    }
+    @media only screen and(max-width:450px) {
+      margin-left: 10rem;
+    }
+    @media only screen and(max-width:420px) {
+      margin-left: 8rem;
+    }
+    @media only screen and(max-width:405px) {
+      margin-left: 7.5rem;
+    }
+
+    @media only screen and(max-width:400px) {
+      margin-left: 5rem;
+    }
+    @media only screen and(max-width:377px) {
+      margin-left: 4rem;
+    }
+    @media only screen and(max-width:360px) {
+      margin-left: 2rem;
+    }
+    @media only screen and(max-width:350px) {
+      margin-left: 1rem;
+    }
+    @media only screen and(max-width:340px) {
+      width: 40rem;
+      margin-left: 4rem;
+    }
+    @media only screen and(max-width:320px) {
+      width: 35rem;
+      margin-left: 4rem;
+    }
+    @media only screen and(max-width:320px) {
+      width: 30rem;
+      margin-left: 6rem;
+    }
+    background-color: white;
+    margin: 0rem 25%;
+    margin-bottom: 9rem;
+    transition: all 0.3s ease;
+    &:hover &__header {
+      border-color: black;
+      &::after {
+        background: pink;
+        animation: circle 0.3s ease;
+      }
+      &::first-letter {
+        color: black;
+      }
+      &__number {
+        color: white;
+        &::after {
+          animation: circle 0.3s ease;
+          background-color: black;
+        }
+      }
+    }
+    &__header {
+      font-size: 3.5rem;
+      color: black;
+      margin: 1.5rem 0;
+      font-family: "Quicksand", sans-serif;
+      text-align: center;
+      font-weight: 200;
+      display: inline-block;
+      padding: 1rem 1rem;
+      background-position-y: 90rem;
+      position: relative;
+      letter-spacing: 0.2rem;
+      border-bottom: 2px solid pink;
+
+      &__number {
+        z-index: 2;
+        color: black;
+        transition: all 0.3s;
+        margin-left: 1rem;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 1.75rem;
+
+          right: 0rem;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          background: pink;
+          // background: rgba(247, 217, 137, 1);
+          // border: 1px solid rgba(247, 217, 137, 1);
+          transform: scale(1);
+          transition: all 0.3s ease;
+          z-index: -1;
+        }
+      }
+      &::first-letter {
+        margin-right: 0.35rem;
+        color: white;
+      }
+      z-index: 5;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 1.75rem;
+        left: 0;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background: black;
+
+        transform: scale(1);
+        transition: all 0.3s ease;
+        z-index: -1;
+      }
+    }
+    &__text {
+      margin: 1.5rem 0;
+      font-size: 2rem;
+      font-family: "Markazi Text", serif;
+      height: 14rem;
+      direction: rtl;
+      text-align: right;
+    }
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+  }
+  &__btn {
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
+    text-align: center;
+    color: white;
+    font-family: "Playball", cursive;
+    background-color: pink;
+    font-size: 2rem;
+    // border: 2px solid rgba(59, 64, 63, 1);
+    border: none;
+    outline: none;
+    position: absolute;
+    transition: all 0.3s ease;
+    z-index: 5;
+    bottom: 20rem;
+    color: black;
+    &__next {
+      left: 75%;
+      @media only screen and(max-width:1500px) {
+        left: 77.5%;
+      }
+      @media only screen and(max-width:1400px) {
+        left: 80%;
+      }
+      @media only screen and(max-width:1300px) {
+        left: 82.5%;
+      }
+      @media only screen and(max-width:1250px) {
+        left: 85%;
+      }
+      @media only screen and(max-width:1200px) {
+        left: 82.5%;
+        display: none;
+      }
+    }
+    &__prev {
+      left: 15%;
+      @media only screen and(max-width:1200px) {
+        display: none;
+      }
+    }
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+// scroll btn btns
+.reviews__btn:hover .reviews__card {
+  display: none;
+}
+.scroll-for-more {
+  width: 15rem;
+  height: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: black;
+  display: none;
+  &__icon {
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-top: -0.5rem;
+    z-index: 2;
+    color: white;
+    animation: slideUpDown 1s ease infinite;
+    @media only screen and(max-width:420px) {
+      font-size: 2rem;
+      z-index: 20;
+    }
+    &::after {
+      content: "";
+      width: 4rem;
+      height: 4rem;
+      position: absolute;
+      left: -0.5rem;
+      top: -1rem;
+      border-radius: 50%;
+      background-color: pink;
+      z-index: -1;
+    }
+  }
+  @media only screen and(max-width:1200px) {
+    display: inline-block;
+  }
+
+  @media only screen and(max-width:520px) {
+    left: 50%;
+    transform: translate(-50%);
+    top: 0rem;
+  }
+}
