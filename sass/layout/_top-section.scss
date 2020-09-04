@@ -1,5 +1,5 @@
 .top-section-container {
-  padding: 0rem 15%;
+  padding: 1.75rem 15%;
   @media only screen and(max-width:$bp-large) {
     padding: 0rem 5%;
   }
@@ -7,14 +7,6 @@
   @media only screen and(max-width:$bp-medium-1) {
     padding: 0 0%;
   }
-}
-.animate-header {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.1em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 .top-section {
   width: 100%;
@@ -35,13 +27,13 @@
     width: 100%;
   }
   &__logo {
-    // width: 13rem;
-    // height: 13rem;
-    // margin: 1rem 0;
     border: 1px solid rgba(251, 242, 236, 1);
     padding: 1rem;
     border-radius: 50%;
     margin-top: -1.5rem;
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 1rem;
   }
   &__header {
     font-family: "Playball", cursive;
@@ -50,7 +42,9 @@
     width: 50rem;
     margin-left: 12rem;
     margin-top: -3rem;
+    margin-bottom: 1rem;
   }
+
   &__sub-header {
     font-size: 3rem;
     margin-top: -1rem;
@@ -72,7 +66,6 @@
       background: url("../../img/high-pic-min-1.png");
       @include centerBackgroundImg;
       z-index: -1;
-      // animation: slideRight 1s ease;
       border-radius: 3px;
     }
     &__text {
@@ -82,8 +75,7 @@
       margin-top: 6rem;
       word-spacing: 0.5rem;
       margin-right: -12rem;
-      //   background-color: #861657;
-      //   background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+
       color: rgba(59, 64, 63, 1);
       text-align: center;
       position: relative;
@@ -142,29 +134,4 @@
 }
 .hide {
   visibility: hidden;
-}
-
-/* The typing effect */
-@keyframes typing {
-  0% {
-    transform: translateX(-30rem);
-    width: 0%;
-  }
-  90% {
-  }
-  100% {
-    width: 100%;
-    transform: translateX(50.5rem);
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: rgb(194, 189, 186);
-  }
 }

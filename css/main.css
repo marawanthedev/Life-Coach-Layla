@@ -203,12 +203,12 @@
       font-family: "Quicksand", sans-serif;
       text-align: center; }
     .contact-us__social-media__p2 {
-      font-size: 2rem; }
+      font-size: 2rem;
+      font-family: "Quicksand", sans-serif; }
       .contact-us__social-media__p2__icon {
         display: inline-block;
         font-size: 3rem;
         margin-left: 1rem;
-        font-family: "Quicksand", sans-serif;
         color: black;
         text-align: center;
         color: pink;
@@ -616,68 +616,14 @@ body {
   .u-margin-bottom-mid {
     margin-bottom: 3rem !important; } }
 
-.row {
-  max-width: 114rem;
-  margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-    @media (max-width: 56.25em) {
-      .row:not(:last-child) {
-        margin-bottom: 6rem; } }
-  @media (max-width: 56.25em) {
-    .row {
-      max-width: 50rem;
-      padding: 0rem 3rem; } }
-  .row::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .row [class^="col-"] {
-    float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
-      @media (max-width: 56.25em) {
-        .row [class^="col-"]:not(:last-child) {
-          margin-right: 0;
-          margin-bottom: 6rem; } }
-    @media (max-width: 56.25em) {
-      .row [class^="col-"] {
-        width: 100% !important; } }
-  .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
-  .row .col-1-of-3 {
-    width: calc((100% - (6rem* 2)) / 3); }
-  .row .col-1-of-4 {
-    width: calc((100% - (6rem* 3)) / 4); }
-  .row .col-2-of-3 {
-    width: calc( ((100% - (6rem* 2)) / 3) * 2 + 6rem);
-    margin-right: 0; }
-  .row .col-3-of-4 {
-    width: calc( ((100% - (6rem* 3)) / 4) * 3 + (6rem* 2)); }
-  .row .col-2-of-4 {
-    width: calc( ((100% - (6rem* 3)) / 4) * 2 + 6rem); }
-
 .top-section-container {
-  padding: 0rem 15%; }
+  padding: 1.75rem 15%; }
   @media only screen and (max-width: 68.75em) {
     .top-section-container {
       padding: 0rem 5%; } }
   @media only screen and (max-width: 61.5625em) {
     .top-section-container {
       padding: 0 0%; } }
-
-.animate-header {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: 0.1em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em;
-  /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
 
 .top-section {
   width: 100%;
@@ -698,14 +644,18 @@ body {
     border: 1px solid #fbf2ec;
     padding: 1rem;
     border-radius: 50%;
-    margin-top: -1.5rem; }
+    margin-top: -1.5rem;
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 1rem; }
   .top-section__header {
     font-family: "Playball", cursive;
     font-size: 6rem;
     font-weight: 500;
     width: 50rem;
     margin-left: 12rem;
-    margin-top: -3rem; }
+    margin-top: -3rem;
+    margin-bottom: 1rem; }
   .top-section__sub-header {
     font-size: 3rem;
     margin-top: -1rem;
@@ -782,24 +732,6 @@ body {
 
 .hide {
   visibility: hidden; }
-
-/* The typing effect */
-@keyframes typing {
-  0% {
-    transform: translateX(-30rem);
-    width: 0%; }
-  90% { }
-  100% {
-    width: 100%;
-    transform: translateX(50.5rem); } }
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent; }
-  50% {
-    border-color: #c2bdba; } }
 
 .navigation {
   z-index: 100000; }
@@ -1332,8 +1264,9 @@ body {
   justify-content: flex-start;
   align-content: flex-start;
   text-align: center;
-  position: relative;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  position: absolute;
+  overflow: visible; }
   @media only screen and (max-width: 1200px) {
     .the-reviews {
       overflow: scroll;
@@ -1341,7 +1274,7 @@ body {
 
 .reviews {
   width: 100%;
-  height: 35rem;
+  height: 37.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1566,11 +1499,14 @@ body {
       width: 4rem;
       height: 4rem;
       position: absolute;
-      left: -0.85rem;
+      left: -1.1rem;
       top: -1rem;
       border-radius: 50%;
       background-color: pink;
       z-index: -1; }
+      @media only screen and (min-width: 540px) {
+        .scroll-for-more__icon::after {
+          left: -0.85rem; } }
   @media only screen and (max-width: 1200px) {
     .scroll-for-more {
       display: inline-block; } }

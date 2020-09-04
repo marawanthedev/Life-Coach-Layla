@@ -51,7 +51,7 @@ Vue.component("top-section", {
 
   <div class="top-section" id="home">
   <div class="top-section__text">
-  <h1 class="top-section__header ">Layla Shabayek</h1>   
+  <h1 class="top-section__header ">Layla <span class="top-section__header__special">Shabayek</span></h1>   
   <img class="top-section__logo" alt="Main logo" src="../img/logo.jpg">
   <div class="top-section__sub-header">Life & Marriage Coach</div>
   <div class="top-section__message">
@@ -151,17 +151,32 @@ Vue.component("middle-section", {
   },
   methods: {
     captureScroll() {
+      console.log(window.scrollY);
       if (window.innerHeight == 754) {
         this.cardsScrollValue1 = 1600;
         this.cardsScrollValue2 = 2050;
       }
+      if (window.innerHeight >= 1024) {
+        this.cardsScrollValue1 = 1150;
+        this.cardsScrollValue2 = 1250;
+      }
+      if (window.innerHeight >= 823) {
+        this.cardsScrollValue1 = 1550;
+        this.cardsScrollValue2 = 1750;
+      }
+      if (window.innerHeight <= 736) {
+        this.cardsScrollValue1 = 1400;
+        this.cardsScrollValue2 = 1550;
+      }
+
       if (window.innerHeight >= 1366) {
-        this.cardsScrollValue1 = 60;
-        this.cardsScrollValue2 = 70;
+        this.cardsScrollValue1 = 1350;
+        this.cardsScrollValue2 = 1650;
       }
 
       setTimeout(() => {
         if (window.scrollY > this.cardsScrollValue1) {
+          console.log("in");
           this.showTopTwo = true;
           setTimeout(() => (this.showTopTwoInfo = true), 350);
         }
@@ -184,7 +199,7 @@ Vue.component("about", {
 <div class="about__text">
   <div class="about__text__head">
     <h1 class="about__text__head__main">Hey, I am Layla</h1>
-    <h3 class="about__text__head__secondary">Life Coach For busy women on mission</h3>
+    <h3 class="about__text__head__secondary">A Life Coach Here To Empower You </h3>
   </div>
   <div class="about__text__main">
   <p class="about__text__main__paragraph">
@@ -507,23 +522,23 @@ Vue.component("reviews", {
       if (this.slideCounter > 0) {
         if (this.slideCounter > 1) {
           document.querySelector(".the-reviews").style.transform =
-            "translateY(" + (this.slideCounter - 1) * -385 + "px)";
+            "translateY(" + (this.slideCounter - 1) * -375 + "px)";
           this.slideCounter--;
         } else {
           document.querySelector(".the-reviews").style.transform =
-            "translateY(" + 0 * 385 + "px)";
+            "translateY(" + 0 * 375 + "px)";
           this.slideCounter--;
         }
       } else {
         this.slideCounter = this.slidesNumber;
         document.querySelector(".the-reviews").style.transform =
-          "translateY(" + this.slideCounter * -385 + "px)";
+          "translateY(" + this.slideCounter * -375 + "px)";
       }
     },
     nextSlide() {
       if (this.slideCounter < this.slidesNumber) {
         document.querySelector(".the-reviews").style.transform =
-          "translateY(" + (this.slideCounter + 1) * -385 + "px)";
+          "translateY(" + (this.slideCounter + 1) * -375 + "px)";
         this.slideCounter++;
         if (this.slideCounter % 4 == 1) {
         }
