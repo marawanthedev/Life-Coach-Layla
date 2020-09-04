@@ -14,8 +14,14 @@
   width: 100%;
   height: 75rem;
   padding: 6rem 0; }
+  @media only screen and (max-width: 1360px) {
+    .about {
+      height: 80rem; } }
+  @media only screen and (max-width: 1260px) {
+    .about {
+      height: 85rem; } }
   .about__img {
-    background: url("../../img/about-img - 2.png");
+    background: url("../../img/about-img-min.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,15 +30,12 @@
     height: 70%;
     box-sizing: border-box;
     border: 2rem solid #fbf2ec; }
+    @media only screen and (max-width: 675px) {
+      .about__img {
+        margin-bottom: 2rem; } }
     @media only screen and (max-width: 1100px) {
       .about__img {
-        background: url("../../img/about-img-min.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat; } }
-    @media only screen and (max-width: 450px) {
-      .about__img {
-        background: url("../../img/about-img - 2.png");
+        background: url("../../img/about-img- 2-min.png");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat; } }
@@ -93,14 +96,12 @@
         .about__text__main__paragraph {
           width: 100%;
           margin-top: 2rem; } }
-  @media only screen and (max-width: 770px) {
-    .about {
-      height: auto; } }
   @media only screen and (max-width: 675px) {
     .about {
       flex-direction: column;
       width: 100%;
-      padding: 5rem 3rem; } }
+      padding: 2rem 3rem;
+      height: auto; } }
 
 .contact-us-container {
   width: 100%;
@@ -919,7 +920,7 @@ body {
 .background-section {
   width: 100%;
   height: 45rem;
-  background: url("/img/footer-middle-img-lg-min.jpg");
+  background: url("/img/footer-middle-img-md-2.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -930,15 +931,9 @@ body {
   font-family: "Amiri", serif;
   background-repeat: no-repeat;
   margin-top: 2rem; }
-  @media only screen and (max-width: 1110px) {
-    .background-section {
-      background: url("/img/footer-middle-img-md.jpg"); } }
   @media only screen and (max-width: 768px) {
     .background-section {
       background: url("/img/footer-middle-img-md-2-min.jpg"); } }
-  @media only screen and (max-width: 634px) {
-    .background-section {
-      background: url("/img/footer-middle-img-sm-min.jpg"); } }
   @media only screen and (max-width: 415px) {
     .background-section {
       background: url("/img/footer-middle-img-xsm-min.jpg"); } }

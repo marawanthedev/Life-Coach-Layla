@@ -179,7 +179,7 @@ Vue.component("about", {
 <div class="about-container" id="about">
 <section class="about">
 <div class="about__img">
-<img class="about__img__inner" alt="about-img" src="../img/about-img.png">
+<img class="about__img__inner" alt="about-img" src="../img/about-img-min.png">
 </div>
 <div class="about__text">
   <div class="about__text__head">
