@@ -620,10 +620,12 @@ body {
   padding: 1.75rem 15%; }
   @media only screen and (max-width: 68.75em) {
     .top-section-container {
-      padding: 0rem 5%; } }
+      padding: 0rem 5%;
+      padding-top: 4rem; } }
   @media only screen and (max-width: 61.5625em) {
     .top-section-container {
-      padding: 0 0%; } }
+      padding: 1rem 0%;
+      padding-top: 4rem; } }
 
 .top-section {
   width: 100%;
